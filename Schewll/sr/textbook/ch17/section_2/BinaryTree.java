@@ -1,3 +1,5 @@
+package textbook.ch17.section_2;
+
 /**
    A binary tree in which each node has two children.
 */

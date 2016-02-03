@@ -1,3 +1,5 @@
+package textbook.ch17.section_3;
+
 /**
    This class implements a binary search tree whose
    nodes hold objects that implement the Comparable

@@ -1,3 +1,5 @@
+package textbook.ch15.worked_example_2;
+
 /** 
     This event describes a customer arriving at a bank.
 */

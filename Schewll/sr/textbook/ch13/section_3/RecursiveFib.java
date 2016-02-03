@@ -1,3 +1,6 @@
+package textbook.ch13.section_3;
+
+
 import java.util.Scanner;
 
 /**

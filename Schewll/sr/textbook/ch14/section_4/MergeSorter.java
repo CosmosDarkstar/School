@@ -1,3 +1,5 @@
+package textbook.ch14.section_4;
+
 /**
    The sort method of this class sorts an array, using the merge 
    sort algorithm.

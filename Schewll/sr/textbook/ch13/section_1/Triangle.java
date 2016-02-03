@@ -1,3 +1,5 @@
+package textbook.ch13.section_1;
+
 /**
    A triangular shape composed of stacked unit squares like this:
    []

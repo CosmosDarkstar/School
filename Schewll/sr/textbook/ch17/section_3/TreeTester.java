@@ -1,3 +1,5 @@
+package textbook.ch17.section_3;
+
 /**
    This program tests the binary search tree class.
 */

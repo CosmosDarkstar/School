@@ -1,3 +1,5 @@
+package textbook.ch14.worked_example_1;
+
 /**
    The sort method of this class sorts an array, using the insertion 
    sort algorithm.

@@ -1,3 +1,5 @@
+package textbook.ch14.section_6_2;
+
 import java.util.Random;
 
 /**

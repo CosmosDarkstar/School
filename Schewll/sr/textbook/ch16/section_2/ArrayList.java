@@ -1,3 +1,5 @@
+package textbook.ch16.section_2;
+
 /**
    This is a simplified implementation of an array list.
 */

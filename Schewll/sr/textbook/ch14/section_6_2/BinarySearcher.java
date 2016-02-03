@@ -1,3 +1,5 @@
+package textbook.ch14.section_6_2;
+
 /**
    A class for executing binary searches in an array.
 */

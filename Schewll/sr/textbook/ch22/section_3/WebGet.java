@@ -1,69 +1,63 @@
-import java.io.InputStream;
+package textbook.ch22.section_3;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
 /**
-   This program demonstrates how to use a socket to communicate
-   with a web server. Supply the name of the host and the
-   resource on the command-line, for example
-   java WebGet horstmann.com index.html
-*/
-public class WebGet
-{
-   public static void main(String[] args) throws IOException
-   {
-      // Get command-line arguments
+ * This program demonstrates how to use a socket to communicate with a web
+ * server. Supply the name of the host and the resource on the command-line, for
+ * example java WebGet horstmann.com index.html
+ */
+public class WebGet {
+	public static void main(String[] args) throws IOException {
+		// Get command-line arguments
 
-      String host;
-      String resource;
+		String host;
+		String resource;
 
-      if (args.length == 2)
-      {
-         host = args[0];
-         resource = args[1];
-      }
-      else
-      {
-         System.out.println("Getting / from horstmann.com");
-         host = "horstmann.com";
-         resource = "/";
-      }
+		if (args.length == 2) {
+			host = args[0];
+			resource = args[1];
+		} else {
+			System.out.println("Getting / from horstmann.com");
+			host = "horstmann.com";
+			resource = "/";
+		}
 
-      // Open socket
+		// Open socket
 
-      final int HTTP_PORT = 80;
-      Socket s = new Socket(host, HTTP_PORT);
+		final int HTTP_PORT = 80;
+		Socket s = new Socket(host, HTTP_PORT);
 
-      // Get streams
-      
-      InputStream instream = s.getInputStream();
-      OutputStream outstream = s.getOutputStream();
+		// Get streams
 
-      // Turn streams into scanners and writers
+		InputStream instream = s.getInputStream();
+		OutputStream outstream = s.getOutputStream();
 
-      Scanner in = new Scanner(instream);
-      PrintWriter out = new PrintWriter(outstream);      
+		// Turn streams into scanners and writers
 
-      // Send command
+		Scanner in = new Scanner(instream);
+		PrintWriter out = new PrintWriter(outstream);
 
-      String command = "GET " + resource + " HTTP/1.1\n" 
-         + "Host: " + host + "\n\n";
-      out.print(command);
-      out.flush();
+		// Send command
 
-      // Read server response
+		String command = "GET " + resource + " HTTP/1.1\n" + "Host: " + host + "\n\n";
+		out.print(command);
+		out.flush();
 
-      while (in.hasNextLine())
-      {
-         String input = in.nextLine();
-         System.out.println(input);
-      }
+		// Read server response
 
-      // Always close the socket at the end
+		while (in.hasNextLine()) {
+			String input = in.nextLine();
+			System.out.println(input);
+		}
 
-      s.close();      
-   }
+		// Always close the socket at the end
+
+		s.close();
+	}
 }

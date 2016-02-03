@@ -1,3 +1,5 @@
+package textbook.ch14.worked_example_1;
+
 /**
    A stopwatch accumulates time when it is running. You can 
    repeatedly start and stop the stopwatch. You can use a

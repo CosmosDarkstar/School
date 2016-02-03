@@ -1,3 +1,5 @@
+package textbook.ch17.section_6;
+
 /**
    This class encapsulates a work order with a priority.
 */

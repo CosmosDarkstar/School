@@ -1,3 +1,5 @@
+package textbook.ch15.section_3;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;

@@ -1,3 +1,5 @@
+package textbook.ch15.worked_example_1;
+
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;

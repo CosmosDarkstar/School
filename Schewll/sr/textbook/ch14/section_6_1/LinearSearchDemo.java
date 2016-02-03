@@ -1,3 +1,5 @@
+package textbook.ch14.section_6_1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

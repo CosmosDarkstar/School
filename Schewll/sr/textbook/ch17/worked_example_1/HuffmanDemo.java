@@ -1,3 +1,8 @@
+package textbook.ch17.worked_example_1;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class HuffmanDemo
 {
    public static void main(String[] args)

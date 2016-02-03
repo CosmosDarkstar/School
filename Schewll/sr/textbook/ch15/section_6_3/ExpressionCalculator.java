@@ -1,3 +1,5 @@
+package textbook.ch15.section_6_3;
+
 import java.util.Scanner;
 import java.util.Stack;
 

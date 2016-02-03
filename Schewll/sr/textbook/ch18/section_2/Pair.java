@@ -1,3 +1,5 @@
+package textbook.ch18.section_2;
+
 /**
    This class collects a pair of elements of different types.
 */

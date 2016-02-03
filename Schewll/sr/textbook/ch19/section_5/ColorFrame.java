@@ -1,84 +1,80 @@
+package textbook.ch19.section_5;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
-public class ColorFrame extends JFrame
-{  
-   private static final int FRAME_WIDTH = 300;
-   private static final int FRAME_HEIGHT = 400;
-  
-   private JPanel colorPanel;
-   private JSlider redSlider;
-   private JSlider greenSlider;
-   private JSlider blueSlider;
+public class ColorFrame extends JFrame {
+	private static final int FRAME_WIDTH = 300;
+	private static final int FRAME_HEIGHT = 400;
 
-   public ColorFrame()
-   {  
-      colorPanel = new JPanel();
-      
-      add(colorPanel, BorderLayout.CENTER);
-      createControlPanel();
-      setSampleColor();
-      setSize(FRAME_WIDTH, FRAME_HEIGHT);
-   }
+	private JPanel colorPanel;
+	private JSlider redSlider;
+	private JSlider greenSlider;
+	private JSlider blueSlider;
 
-   class ColorListener implements ChangeListener
-   {  
-      public void stateChanged(ChangeEvent event)
-      {  
-         setSampleColor();
-      }
-   }   
+	public ColorFrame() {
+		colorPanel = new JPanel();
 
-   public void createControlPanel()
-   {
-      ChangeListener listener = new ColorListener();
+		add(colorPanel, BorderLayout.CENTER);
+		createControlPanel();
+		setSampleColor();
+		setSize(FRAME_WIDTH, FRAME_HEIGHT);
+	}
 
-      redSlider = new JSlider(0, 255, 255);
-      redSlider.addChangeListener(listener);
+	class ColorListener implements ChangeListener {
+		public void stateChanged(ChangeEvent event) {
+			setSampleColor();
+		}
+	}
 
-      greenSlider = new JSlider(0, 255, 175);
-      greenSlider.addChangeListener(listener);
+	public void createControlPanel() {
+		ChangeListener listener = new ColorListener();
 
-      blueSlider = new JSlider(0, 255, 175);
-      blueSlider.addChangeListener(listener);
-      
-      JPanel controlPanel = new JPanel();
-      controlPanel.setLayout(new GridLayout(3, 2));
+		redSlider = new JSlider(0, 255, 255);
+		redSlider.addChangeListener(listener);
 
-      controlPanel.add(new JLabel("Red"));
-      controlPanel.add(redSlider);
+		greenSlider = new JSlider(0, 255, 175);
+		greenSlider.addChangeListener(listener);
 
-      controlPanel.add(new JLabel("Green"));
-      controlPanel.add(greenSlider);
+		blueSlider = new JSlider(0, 255, 175);
+		blueSlider.addChangeListener(listener);
 
-      controlPanel.add(new JLabel("Blue"));
-      controlPanel.add(blueSlider);
+		JPanel controlPanel = new JPanel();
+		controlPanel.setLayout(new GridLayout(3, 2));
 
-      add(controlPanel, BorderLayout.SOUTH);      
-   }
-   
-   /**
-      Reads the slider values and sets the panel to
-      the selected color.
-   */
-   public void setSampleColor()
-   {  
-      // Read slider values
-   
-      int red = redSlider.getValue();
-      int green = greenSlider.getValue();
-      int blue = blueSlider.getValue();
+		controlPanel.add(new JLabel("Red"));
+		controlPanel.add(redSlider);
 
-      // Set panel background to selected color
-      
-      colorPanel.setBackground(new Color(red, green, blue));
-      colorPanel.repaint();
-   }
+		controlPanel.add(new JLabel("Green"));
+		controlPanel.add(greenSlider);
+
+		controlPanel.add(new JLabel("Blue"));
+		controlPanel.add(blueSlider);
+
+		add(controlPanel, BorderLayout.SOUTH);
+	}
+
+	/**
+	 * Reads the slider values and sets the panel to the selected color.
+	 */
+	public void setSampleColor() {
+		// Read slider values
+
+		int red = redSlider.getValue();
+		int green = greenSlider.getValue();
+		int blue = blueSlider.getValue();
+
+		// Set panel background to selected color
+
+		colorPanel.setBackground(new Color(red, green, blue));
+		colorPanel.repaint();
+	}
 }

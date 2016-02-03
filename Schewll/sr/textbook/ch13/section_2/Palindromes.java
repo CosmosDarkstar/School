@@ -1,3 +1,5 @@
+package textbook.ch13.section_2;
+
 public class Palindromes
 {
    public static void main(String[] args)

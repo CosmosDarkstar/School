@@ -1,3 +1,5 @@
+package textbook.ch13.section_6;
+
 /**
    A queen in the eight queens problem.
 */

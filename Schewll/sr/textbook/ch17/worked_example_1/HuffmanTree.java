@@ -1,3 +1,5 @@
+package textbook.ch17.worked_example_1;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;

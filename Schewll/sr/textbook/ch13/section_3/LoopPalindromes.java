@@ -1,3 +1,5 @@
+package textbook.ch13.section_3;
+
 public class LoopPalindromes
 {
    public static void main(String[] args)

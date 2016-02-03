@@ -1,3 +1,5 @@
+package textbook.ch13.section_6;
+
 /**
    This class solves the eight queens problem using backtracking.
 */

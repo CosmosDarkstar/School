@@ -1,3 +1,5 @@
+package textbook.ch14.section_6_1;
+
 /**
    A class for executing linear searches in an array.
 */

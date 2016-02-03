@@ -1,3 +1,5 @@
+package textbook.ch14.worked_example_1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

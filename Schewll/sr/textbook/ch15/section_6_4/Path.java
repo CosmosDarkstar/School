@@ -1,3 +1,5 @@
+package textbook.ch15.section_6_4;
+
 /**
    A path in a maze is defined by a starting (row, column) 
    position and a direction (NORTH, EAST, SOUTH, or WEST).

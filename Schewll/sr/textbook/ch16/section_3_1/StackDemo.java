@@ -1,3 +1,5 @@
+package textbook.ch16.section_3_1;
+
 public class StackDemo
 {
    public static void main(String[] args)

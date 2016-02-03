@@ -1,3 +1,5 @@
+package textbook.ch13.worked_example_2;
+
 /**
    This program prints instructions for solving a Towers of Hanoi puzzle.
 */

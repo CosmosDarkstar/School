@@ -1,3 +1,5 @@
+package textbook.ch17.section_2;
+
 import java.util.Scanner;
 
 /**

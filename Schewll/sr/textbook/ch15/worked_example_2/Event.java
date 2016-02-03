@@ -1,3 +1,5 @@
+package textbook.ch15.worked_example_2;
+
 public class Event implements Comparable<Event>
 {
    private double time;

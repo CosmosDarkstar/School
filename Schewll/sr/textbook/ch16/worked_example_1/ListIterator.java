@@ -1,3 +1,5 @@
+package textbook.ch16.worked_example_1;
+
 /**
    A list iterator allows access of a position in a linked list.    
    This interface contains a subset of the methods of the 

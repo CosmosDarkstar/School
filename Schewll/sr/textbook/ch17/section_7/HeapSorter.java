@@ -1,3 +1,5 @@
+package textbook.ch17.section_7;
+
 /**
    The sort method of this class sorts an array, using the heap 
    sort algorithm.

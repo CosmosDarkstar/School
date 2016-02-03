@@ -1,3 +1,5 @@
+package textbook.ch16.worked_example_1;
+
 /**
    A program that demonstrates the LinkedList class
 */

@@ -1,3 +1,5 @@
+package textbook.ch16.worked_example_1;
+
 import java.util.NoSuchElementException;
 
 /**

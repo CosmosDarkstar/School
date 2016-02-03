@@ -1,3 +1,5 @@
+package textbook.ch16.section_2;
+
 /**
    This program demonstrates the array list implementation.
 */

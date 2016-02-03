@@ -1,3 +1,5 @@
+package textbook.ch17.section_6;
+
 /**
    This program demonstrates the use of a heap as a priority queue.
 */
