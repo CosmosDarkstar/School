@@ -1,4 +1,4 @@
-package textbook.ch14.section_1;
+package skewll.ch14.soipets;
 
 import java.util.Random;
 
@@ -38,12 +38,6 @@ public class ArrayUtil {
 	 */
 	public static void swap(int[] a, int i, int j) {
 		int temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
-	}
-
-	public static void swap(String[] a, int i, int j) {
-		String temp = a[i];
 		a[i] = a[j];
 		a[j] = temp;
 	}
