@@ -1,4 +1,4 @@
-package skewll.ch9;
+package skewll.ch9.foop;
 
 /**
  * A question with a text and an answer.
