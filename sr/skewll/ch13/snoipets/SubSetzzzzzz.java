@@ -13,7 +13,7 @@ public class SubSetzzzzzz {
 
 		if (left.length() == 1) {
 			subz.add(left);
-			return;
+
 		} else {
 
 			String removed = left.substring(0, 1);
@@ -28,7 +28,7 @@ public class SubSetzzzzzz {
 				subz.add(temp);
 			}
 			subz.add(removed);
-			return;
+
 		}
 	}
 
