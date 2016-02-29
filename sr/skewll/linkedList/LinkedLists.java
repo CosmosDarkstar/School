@@ -45,6 +45,7 @@ public class LinkedLists {
 			} else {
 				list.add(input);
 			}
+			scanner.close();
 		}
 	}
 

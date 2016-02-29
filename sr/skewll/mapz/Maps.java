@@ -82,6 +82,9 @@ public class Maps {
 		while (in.hasNext()) {
 			words.add(in.next().toLowerCase());
 		}
+		in.close();
+
 		return words;
 	}
+
 }

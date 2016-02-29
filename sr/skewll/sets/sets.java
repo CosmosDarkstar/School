@@ -71,6 +71,7 @@ public class sets {
 		while (in.hasNext()) {
 			words.add(in.next().toLowerCase());
 		}
+		in.close();
 		return words;
 	}
 
