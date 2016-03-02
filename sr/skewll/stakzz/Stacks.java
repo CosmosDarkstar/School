@@ -32,7 +32,6 @@ public class Stacks {
 			si = new StackImplementor(inStuff);
 			si.populateStack();
 			si.printStack();
-			inStuff.close();
 
 		} catch (FileNotFoundException e) {
 			System.out.println("you messed up");
