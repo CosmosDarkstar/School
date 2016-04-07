@@ -6,21 +6,32 @@ package skewll.treeStuffffffffff;
 public class TreeTester {
 	public static void main(String[] args) {
 		BinarySearchTree t = new BinarySearchTree();
-		t.add("D");
-		t.add("B");
-		t.add("A");
-		t.add("C");
-		t.add("F");
-		t.add("E");
-		t.add("I");
-		t.add("G");
-		t.add("H");
-		t.add("J");
-		t.remove("A"); // Removing leaf
-		t.remove("B"); // Removing element with one child
-		t.remove("F"); // Removing element with two children
-		t.remove("D"); // Removing root
+		t.add("Mary");
+		t.add("had");
+		t.add("a");
+		t.add("little");
+		t.add("lamb");
+		t.add("its");
+		t.add("fleece");
+		t.add("was");
+		t.add("white");
+		t.add("as");
+		t.add("snow");
+
 		t.print();
-		System.out.println("Expected: C E G H I J");
+
+		Tree verp = new Tree();
+		Tree flobt = new Tree("Mary");
+		verp.addSubtree("had");
+		verp.addSubtree("a");
+		verp.addSubtree("little");
+		verp.addSubtree("lamb");
+		verp.addSubtree("its");
+		verp.addSubtree("fleece");
+		verp.addSubtree("was");
+		verp.addSubtree("white");
+		verp.addSubtree("as");
+		verp.addSubtree("snow");
+
 	}
 }
