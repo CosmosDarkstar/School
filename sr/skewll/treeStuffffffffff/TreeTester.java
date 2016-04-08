@@ -20,18 +20,40 @@ public class TreeTester {
 
 		t.print();
 
-		Tree verp = new Tree();
+		class thisIsStupid implements Tree.Visitor {
+
+			@Override
+			public void visit(Object data) {
+
+			}
+
+		}
+
 		Tree flobt = new Tree("Mary");
-		verp.addSubtree("had");
-		verp.addSubtree("a");
-		verp.addSubtree("little");
-		verp.addSubtree("lamb");
-		verp.addSubtree("its");
-		verp.addSubtree("fleece");
-		verp.addSubtree("was");
-		verp.addSubtree("white");
-		verp.addSubtree("as");
-		verp.addSubtree("snow");
+		Tree q = new Tree("had");
+		Tree e = new Tree("a");
+		Tree r = new Tree("little");
+		Tree i = new Tree("lamb");
+		Tree y = new Tree("its");
+		Tree u = new Tree("fleece");
+		Tree wg = new Tree("was");
+		Tree o = new Tree("white");
+		Tree p = new Tree("as");
+		Tree obt = new Tree("snow");
+
+		flobt.addSubtree(q);
+		flobt.addSubtree(e);
+		flobt.addSubtree(r);
+		flobt.addSubtree(i);
+		flobt.addSubtree(y);
+		flobt.addSubtree(u);
+		flobt.addSubtree(wg);
+		flobt.addSubtree(o);
+		flobt.addSubtree(p);
+		flobt.addSubtree(obt);
+
+		System.out.println(flobt.postorder());
 
 	}
+
 }
