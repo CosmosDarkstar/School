@@ -28,6 +28,7 @@ public class TreeTester {
 			}
 
 		}
+		thisIsStupid vo = new thisIsStupid();
 
 		Tree flobt = new Tree("Mary");
 		Tree q = new Tree("had");
@@ -52,7 +53,7 @@ public class TreeTester {
 		flobt.addSubtree(p);
 		flobt.addSubtree(obt);
 
-		System.out.println(flobt.postorder());
+		// System.out.println(flobt.postorder(vo());
 
 	}
 
