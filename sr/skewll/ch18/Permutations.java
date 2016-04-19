@@ -1,4 +1,4 @@
-package skewll.ch13.starter;
+package skewll.ch18;
 
 import java.util.ArrayList;
 
@@ -13,32 +13,33 @@ public class Permutations {
 	}
 
 	/**
-	 * Gets all permutations of a given word.
+	 * Gets all permutations of a given init.
 	 * 
-	 * @param word
+	 * @param init
 	 *            the string to permute
 	 * @return a list of all permutations
 	 */
 	public static <T extends Comparable<T>> T permutations(T[] t) {
-		// ArrayList<String> result = new ArrayList<String>();
-		T largest = t[0];
+
+		T init = t[0];
+		ArrayList<T> result = new ArrayList<T>();
 		// The empty string has a single permutation: itself
-		if (word.length() == 0) {
-			result.add(word);
+		if (init.length() == 0) {
+			result.add(init);
 			return result;
 		} else {
 			// Loop through all character positions
-			for (int i = 0; i < word.length(); i++) {
-				// Form a shorter word by removing the ith character
-				String shorter = word.substring(0, i) + word.substring(i + 1);
+			for (int i = 0; i < init.length(); i++) {
+				// Form a shorter init by removing the ith character
+				T shorter = init.substring(0, i) + init.substring(i + 1);
 
-				// Generate all permutations of the simpler word
-				ArrayList<String> shorterPermutations = permutations(shorter);
+				// Generate all permutations of the simpler init
+				ArrayList<t> shorterPermutations = permutations(shorter);
 
 				// Add the removed character to the front of
-				// each permutation of the simpler word,
+				// each permutation of the simpler init,
 				for (String s : shorterPermutations) {
-					result.add(word.charAt(i) + s);
+					result.add(init.charAt(i) + s);
 				}
 			}
 			// Return all permutations
