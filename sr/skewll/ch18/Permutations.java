@@ -7,9 +7,7 @@ import java.util.ArrayList;
  */
 public class Permutations {
 	public static void main(String[] args) {
-		for (String s : permutations("eat")) {
-			System.out.println(s);
-		}
+
 	}
 
 	/**
@@ -19,31 +17,33 @@ public class Permutations {
 	 *            the string to permute
 	 * @return a list of all permutations
 	 */
+	@SuppressWarnings("unchecked")
 	public static <T extends Comparable<T>> T permutations(T[] t) {
 
 		T init = t[0];
+
 		ArrayList<T> result = new ArrayList<T>();
 		// The empty string has a single permutation: itself
-		if (init.length() == 0) {
+		if (((String) init).length() == 0) {
 			result.add(init);
-			return result;
+			return (T) result;
 		} else {
 			// Loop through all character positions
-			for (int i = 0; i < init.length(); i++) {
+			for (int i = 0; i < ((String) init).length(); i++) {
 				// Form a shorter init by removing the ith character
-				T shorter = init.substring(0, i) + init.substring(i + 1);
+				T shorter = (T) (((String) init).substring(0, i) + ((String) init).substring(i + 1));
 
 				// Generate all permutations of the simpler init
-				ArrayList<t> shorterPermutations = permutations(shorter);
+				// ArrayList<T> shorterPermutations = permutations(shorter);
 
 				// Add the removed character to the front of
 				// each permutation of the simpler init,
-				for (String s : shorterPermutations) {
-					result.add(init.charAt(i) + s);
-				}
+				// for (T s : shorterPermutations) {
+				// result.add(((String) init).charAt(i) + s);
+				// }
 			}
 			// Return all permutations
-			return result;
+			return (T) result;
 		}
 	}
 }
