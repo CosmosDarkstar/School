@@ -16,6 +16,7 @@ public class Loopp {
 				System.out.println("Duplicate transaction?");
 			}
 		}
+		scanner.close();
 	}
 
 }
